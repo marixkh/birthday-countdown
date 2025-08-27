@@ -1,0 +1,61 @@
+:root {
+  --bg: #ffeef4;        /* صورتی خیلی ملایم برای پس‌زمینه */
+  --card: #fff0f5;      /* کارت پشت تایمر */
+  --text: #ff69b4;      /* متن اصلی */
+  --accent: #ffb6c1;    /* رنگ دکمه و حاشیه‌ها */
+  --shadow: rgba(255,105,180,0.3);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", "Segoe UI", sans-serif; /* گوگولی و فانتزی */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  text-align: center;
+  background: var(--card);
+  padding: 30px 40px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px var(--shadow);
+  border: 2px solid var(--accent);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+input, button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  margin: 5px;
+  border-radius: 12px;
+  border: 2px solid var(--accent);
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff85c1;
+}
+
+#countdown {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px var(--shadow);
+  color: var(--text);
+}
